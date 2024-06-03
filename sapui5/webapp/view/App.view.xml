@@ -1,0 +1,26 @@
+<mvc:View
+    controllerName="lorkgroup.sapui5.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <App id="app_01">
+        <pages>
+            <Page id="page_01"
+                        title="{i18n>appTitle1}">
+                <Button
+                    id="_IDGenButton2"
+                    text="{i18n>showHelloButtonText}"
+                    press=".onShowHello"
+                />
+
+                <Input
+                    id="_IDGenInput"
+                    value="{/recipient/name}"
+                    description="hello_ {/recipient/name}"
+                    valueLiveUpdate="true"
+                    width="60%"
+                />
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
